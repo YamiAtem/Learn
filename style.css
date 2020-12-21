@@ -1,0 +1,73 @@
+.parent {
+    border: 20px #FF0000 ridge;
+
+    display: flex;
+
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+}
+
+.child {
+    
+    background: linear-gradient(to left, red, #008000);
+
+    flex-shrink: 5;
+
+    order: 5;
+}
+
+.otherChild {
+    width: 100px;
+    height: 200px;
+    
+    background: linear-gradient(to left, red, purple);
+
+    order: 1;
+}
+
+.child1 {
+    width: 100px;
+    height: 100px;
+    
+    background: linear-gradient(to left, red, green);
+
+    order: 2;
+}
+
+.otherChild1 {
+    width: 100px;
+    height: 200px;
+
+    animation-name: animation1;
+    animation-delay: 5s;
+
+    order: 4;
+}
+
+@keyframes animation1 {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: green;
+    }
+}
+
+.child2 {
+    width: 100px;
+    height: 100px;
+    
+    background: #00f300;
+
+    order: 3;
+}
+
+.otherChild2 {
+    width: 100px;
+    height: 200px;
+    
+    background-color: #800080;
+    order: 6;
+}
